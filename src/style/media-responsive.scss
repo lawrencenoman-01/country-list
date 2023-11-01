@@ -1,0 +1,6 @@
+@mixin sm_size {
+    // atau 768px
+    @media only screen and (max-width: 567px) {
+        @content
+    }
+}

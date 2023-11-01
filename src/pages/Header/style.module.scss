@@ -1,0 +1,30 @@
+@import '../../style/color.scss';
+@import '../../style/display.scss';
+@import '../../style/media-responsive.scss';
+
+.header_container {
+    // padding-inline: 20px;
+    padding: 24px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+    .header_content {
+        @include flex-space-between;
+        
+        a {
+            font-weight: 800;
+            color: $very-dark-blue-light;
+
+            @include sm-size {
+                font-size: 18px
+            }
+        }
+
+        .button_changer {
+            @include flex-center;
+            border: none;
+            background-color: $very-light-gray;
+            cursor: pointer;
+            gap: 5px;
+        }
+    }
+}
